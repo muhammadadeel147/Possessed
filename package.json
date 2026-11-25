@@ -1,0 +1,31 @@
+{
+  "name": "possessed",
+  "version": "0.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=8"
+  },
+  "scripts": {
+    "dev": "pnpm --filter @possessed/web dev",
+    "dev:ext": "pnpm --filter @possessed/extension dev",
+    "build": "pnpm --filter @possessed/core build && pnpm --filter @possessed/web build && pnpm --filter @possessed/extension build",
+    "test": "pnpm --filter @possessed/core test && pnpm --filter @possessed/web test",
+    "test:e2e": "playwright test",
+    "lint": "eslint . --max-warnings 0",
+    "typecheck": "pnpm -r typecheck",
+    "format": "prettier --write .",
+    "worker:dev": "pnpm --filter @possessed/exorcist-ai dev",
+    "worker:deploy": "pnpm --filter @possessed/exorcist-ai deploy"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "eslint": "^9.0.0",
+    "eslint-plugin-jsx-a11y": "^6.10.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "prettier": "^3.4.0",
+    "typescript": "^5.7.0"
+  }
+}

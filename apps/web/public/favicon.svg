@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" fill="#07060B" rx="4"/>
+  <!-- Eye inside a candle flame glyph -->
+  <ellipse cx="16" cy="18" rx="7" ry="5" fill="none" stroke="#7CFFB2" stroke-width="1.5"/>
+  <circle cx="16" cy="18" r="2.5" fill="#7CFFB2"/>
+  <path d="M16 13 C14 10 12 7 16 4 C20 7 18 10 16 13Z" fill="#F5C66B" opacity="0.9"/>
+</svg>

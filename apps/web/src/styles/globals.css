@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Self-hosted fonts ─────────────────────────────────────────────── */
+@font-face {
+  font-family: 'IM Fell English SC';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/assets/fonts/im-fell-english-sc.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('/assets/fonts/inter-variable.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('/assets/fonts/jetbrains-mono-variable.woff2') format('woff2');
+}
+
+/* ── Design tokens ─────────────────────────────────────────────────── */
+:root {
+  --void: #07060B;
+  --crypt: #121019;
+  --tomb: #1C1926;
+  --bone: #ECE6D9;
+  --fog: #A49FB0;
+  --ectoplasm: #7CFFB2;
+  --candle: #F5C66B;
+  --blood: #E0485F;
+  --spectre: #9D8CFF;
+}
+
+/* ── Base ──────────────────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--void);
+  color: var(--bone);
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* ── Focus rings (WCAG 2.2 AA) ─────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--ectoplasm);
+  outline-offset: 3px;
+}
