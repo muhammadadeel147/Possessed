@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <rect width="400" height="400" fill="#120c18"/>
+  <!-- Potion bottle -->
+  <path d="M160 320 L160 240 Q155 220 145 200 Q130 170 130 140 Q130 100 200 100 Q270 100 270 140 Q270 170 255 200 Q245 220 240 240 L240 320 Z" fill="#2a1f3d"/>
+  <path d="M160 320 L160 240 Q155 220 145 200 Q130 170 130 140 Q130 100 200 100 Q270 100 270 140 Q270 170 255 200 Q245 220 240 240 L240 320 Z" fill="none" stroke="#7cffb2" stroke-width="2" opacity="0.6"/>
+  <!-- Liquid -->
+  <path d="M165 290 L165 250 Q163 235 155 218 Q144 192 144 165 Q144 130 200 130 Q256 130 256 165 Q256 192 245 218 Q237 235 235 250 L235 290 Z" fill="#4a1a6a" opacity="0.8"/>
+  <ellipse cx="200" cy="290" rx="37" ry="6" fill="#6a2a9a" opacity="0.6"/>
+  <!-- Cork -->
+  <rect x="175" y="88" width="50" height="20" rx="4" fill="#8B6914"/>
+  <!-- Bubbles -->
+  <circle cx="185" cy="200" r="4" fill="#7cffb2" opacity="0.4"/>
+  <circle cx="210" cy="220" r="3" fill="#9d8cff" opacity="0.4"/>
+  <circle cx="195" cy="240" r="5" fill="#7cffb2" opacity="0.3"/>
+  <!-- Label -->
+  <rect x="165" y="175" width="70" height="45" rx="3" fill="#1a0f2e" stroke="#7cffb2" stroke-width="1" opacity="0.8"/>
+  <text x="200" y="196" text-anchor="middle" fill="#7cffb2" font-size="8" font-family="serif">MIDNIGHT</text>
+  <text x="200" y="208" text-anchor="middle" fill="#7cffb2" font-size="7" font-family="serif">ELIXIR</text>
+</svg>

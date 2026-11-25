@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <rect width="400" height="400" fill="#0d0d16"/>
+  <!-- Crystal ball / glass orb -->
+  <defs>
+    <radialGradient id="orb" cx="40%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#d4c8f0" stop-opacity="0.9"/>
+      <stop offset="40%" stop-color="#9d8cff" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#2a1f4a" stop-opacity="0.9"/>
+    </radialGradient>
+  </defs>
+  <circle cx="200" cy="190" r="110" fill="url(#orb)"/>
+  <!-- Inner mist shapes -->
+  <ellipse cx="175" cy="200" rx="60" ry="30" fill="#7cffb2" opacity="0.07"/>
+  <ellipse cx="220" cy="175" rx="40" ry="20" fill="#9d8cff" opacity="0.1"/>
+  <!-- Highlight -->
+  <ellipse cx="168" cy="155" rx="25" ry="15" fill="white" opacity="0.15"/>
+  <ellipse cx="162" cy="150" rx="10" ry="6" fill="white" opacity="0.25"/>
+  <!-- Base -->
+  <ellipse cx="200" cy="308" rx="70" ry="12" fill="#1a1030"/>
+  <path d="M145 302 Q155 318 200 320 Q245 318 255 302 Q235 310 200 312 Q165 310 145 302Z" fill="#2a2040"/>
+  <!-- Pedestal -->
+  <rect x="175" y="300" width="50" height="10" rx="2" fill="#1e1535"/>
+  <rect x="165" y="308" width="70" height="8" rx="2" fill="#16102a"/>
+</svg>

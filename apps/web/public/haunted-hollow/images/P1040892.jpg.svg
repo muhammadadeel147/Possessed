@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <rect width="400" height="400" fill="#0e0e14"/>
+  <!-- Tarot card deck -->
+  <!-- Stack of cards (offset) -->
+  <rect x="115" y="108" width="140" height="210" rx="6" fill="#2a1f3d" transform="rotate(-8,185,213)"/>
+  <rect x="118" y="105" width="140" height="210" rx="6" fill="#32244a" transform="rotate(-4,188,210)"/>
+  <!-- Top card -->
+  <rect x="122" y="102" width="140" height="210" rx="6" fill="#1a1230"/>
+  <rect x="122" y="102" width="140" height="210" rx="6" fill="none" stroke="#f5c66b" stroke-width="2"/>
+  <!-- Card art - moon -->
+  <circle cx="192" cy="175" r="40" fill="none" stroke="#f5c66b" stroke-width="1.5"/>
+  <path d="M192 135 Q230 155 230 175 Q230 195 192 215 Q172 195 172 175 Q172 155 192 135Z" fill="#f5c66b" opacity="0.3"/>
+  <!-- Stars -->
+  <text x="145" y="145" fill="#ece6d9" font-size="10" opacity="0.7">✦</text>
+  <text x="225" y="155" fill="#ece6d9" font-size="8" opacity="0.7">✦</text>
+  <text x="155" y="215" fill="#ece6d9" font-size="7" opacity="0.7">✦</text>
+  <text x="220" y="210" fill="#ece6d9" font-size="9" opacity="0.7">✦</text>
+  <!-- Card name -->
+  <text x="192" y="244" text-anchor="middle" fill="#f5c66b" font-size="11" font-family="serif" letter-spacing="2">THE MOON</text>
+  <!-- Roman numeral -->
+  <text x="192" y="128" text-anchor="middle" fill="#f5c66b" font-size="11" font-family="serif">XVIII</text>
+  <!-- Bottom text -->
+  <text x="192" y="295" text-anchor="middle" fill="#a49fb0" font-size="9" font-family="serif">Rider-Hollow Tarot</text>
+</svg>

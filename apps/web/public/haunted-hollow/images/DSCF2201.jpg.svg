@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <rect width="400" height="400" fill="#12100f"/>
+  <!-- Raven bookends (pair) -->
+  <!-- Left raven -->
+  <g transform="translate(60,80)">
+    <!-- Base -->
+    <rect x="20" y="230" width="90" height="12" rx="3" fill="#2a2520"/>
+    <!-- Body -->
+    <ellipse cx="65" cy="185" rx="38" ry="55" fill="#1a1818"/>
+    <!-- Wing detail -->
+    <path d="M30 160 Q20 190 25 220 Q40 200 65 195" fill="#252020" stroke="#333" stroke-width="0.5"/>
+    <!-- Head -->
+    <ellipse cx="65" cy="125" rx="28" ry="30" fill="#1a1818"/>
+    <!-- Beak -->
+    <path d="M85 120 L105 128 L85 136 Z" fill="#3a3030"/>
+    <!-- Eye -->
+    <circle cx="75" cy="118" r="6" fill="#1a1818"/>
+    <circle cx="75" cy="118" r="3" fill="#e0485f"/>
+    <circle cx="76" cy="117" r="1" fill="#fff" opacity="0.8"/>
+    <!-- Tail feathers -->
+    <path d="M40 230 Q30 255 25 265 Q45 255 65 240" fill="#151313"/>
+    <path d="M65 235 Q60 258 58 268 Q72 255 80 240" fill="#1a1818"/>
+  </g>
+  <!-- Right raven (mirrored) -->
+  <g transform="translate(390,80) scale(-1,1)">
+    <rect x="20" y="230" width="90" height="12" rx="3" fill="#2a2520"/>
+    <ellipse cx="65" cy="185" rx="38" ry="55" fill="#1a1818"/>
+    <path d="M30 160 Q20 190 25 220 Q40 200 65 195" fill="#252020" stroke="#333" stroke-width="0.5"/>
+    <ellipse cx="65" cy="125" rx="28" ry="30" fill="#1a1818"/>
+    <path d="M85 120 L105 128 L85 136 Z" fill="#3a3030"/>
+    <circle cx="75" cy="118" r="6" fill="#1a1818"/>
+    <circle cx="75" cy="118" r="3" fill="#e0485f"/>
+    <circle cx="76" cy="117" r="1" fill="#fff" opacity="0.8"/>
+    <path d="M40 230 Q30 255 25 265 Q45 255 65 240" fill="#151313"/>
+    <path d="M65 235 Q60 258 58 268 Q72 255 80 240" fill="#1a1818"/>
+  </g>
+  <!-- Books between them (suggestion) -->
+  <rect x="145" y="230" width="110" height="55" fill="#2d1a0a"/>
+  <rect x="148" y="228" width="6" height="57" fill="#8B4513" opacity="0.6"/>
+  <rect x="158" y="225" width="6" height="62" fill="#4a2a0a" opacity="0.8"/>
+  <rect x="168" y="230" width="6" height="55" fill="#6b3a1a" opacity="0.7"/>
+  <rect x="178" y="227" width="6" height="58" fill="#3a1a05" opacity="0.9"/>
+  <rect x="188" y="232" width="6" height="53" fill="#7b4a2a" opacity="0.6"/>
+  <rect x="198" y="229" width="6" height="56" fill="#5a2a0a" opacity="0.8"/>
+  <rect x="208" y="231" width="6" height="54" fill="#8B4513" opacity="0.5"/>
+  <rect x="218" y="228" width="6" height="57" fill="#4a1a05" opacity="0.9"/>
+  <rect x="228" y="230" width="6" height="55" fill="#6a3a1a" opacity="0.7"/>
+  <rect x="238" y="227" width="6" height="58" fill="#3a2a0a" opacity="0.8"/>
+</svg>

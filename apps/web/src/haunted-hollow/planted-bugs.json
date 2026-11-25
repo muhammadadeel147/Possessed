@@ -1,0 +1,298 @@
+[
+  {
+    "id": "bug-01",
+    "hhId": "hero-image",
+    "axeRule": "image-alt",
+    "page": "home",
+    "description": "Hero image with meaningless camera filename, no alt attribute",
+    "expectedFix": "Add descriptive alt text"
+  },
+  {
+    "id": "bug-02",
+    "hhId": "product-img-1",
+    "axeRule": "image-alt",
+    "page": "home",
+    "description": "Product image (candles) with no alt attribute",
+    "expectedFix": "Add alt text describing the product"
+  },
+  {
+    "id": "bug-03",
+    "hhId": "product-img-2",
+    "axeRule": "image-alt",
+    "page": "home",
+    "description": "Product image (skull planter) with no alt attribute",
+    "expectedFix": "Add alt text describing the product"
+  },
+  {
+    "id": "bug-04",
+    "hhId": "product-img-3",
+    "axeRule": "image-alt",
+    "page": "home",
+    "description": "Product image (potion bottle) with no alt attribute",
+    "expectedFix": "Add alt text describing the product"
+  },
+  {
+    "id": "bug-05",
+    "hhId": "product-img-4",
+    "axeRule": "image-alt",
+    "page": "home",
+    "description": "Product image (tarot deck) with no alt attribute",
+    "expectedFix": "Add alt text describing the product"
+  },
+  {
+    "id": "bug-06",
+    "hhId": "product-img-5",
+    "axeRule": "image-alt",
+    "page": "home",
+    "description": "Product image (raven bookends) with no alt attribute",
+    "expectedFix": "Add alt text describing the product"
+  },
+  {
+    "id": "bug-07",
+    "hhId": "decorative-divider",
+    "axeRule": "image-alt",
+    "page": "home",
+    "description": "Decorative divider image missing alt='' (should be empty string for decorative)",
+    "expectedFix": "Add alt='' to mark as decorative"
+  },
+  {
+    "id": "bug-08",
+    "hhId": "cart-btn",
+    "axeRule": "button-name",
+    "page": "home",
+    "description": "Icon-only cart button with inline SVG, no accessible name",
+    "expectedFix": "Add aria-label='Open cart'"
+  },
+  {
+    "id": "bug-09",
+    "hhId": "search-btn",
+    "axeRule": "button-name",
+    "page": "home",
+    "description": "Icon-only search button with inline SVG, no accessible name",
+    "expectedFix": "Add aria-label='Search'"
+  },
+  {
+    "id": "bug-10",
+    "hhId": "wishlist-btn-1",
+    "axeRule": "button-name",
+    "page": "home",
+    "description": "Icon-only wishlist heart button, no accessible name",
+    "expectedFix": "Add aria-label='Add to wishlist'"
+  },
+  {
+    "id": "bug-11",
+    "hhId": "wishlist-btn-2",
+    "axeRule": "button-name",
+    "page": "home",
+    "description": "Icon-only wishlist heart button on second product, no accessible name",
+    "expectedFix": "Add aria-label='Add to wishlist'"
+  },
+  {
+    "id": "bug-12",
+    "hhId": "qty-minus",
+    "axeRule": "button-name",
+    "page": "product",
+    "description": "Quantity decrement button showing only '-', no accessible name",
+    "expectedFix": "Add aria-label='Decrease quantity'"
+  },
+  {
+    "id": "bug-13",
+    "hhId": "qty-plus",
+    "axeRule": "button-name",
+    "page": "product",
+    "description": "Quantity increment button showing only '+', no accessible name",
+    "expectedFix": "Add aria-label='Increase quantity'"
+  },
+  {
+    "id": "bug-14",
+    "hhId": "cart-close-btn",
+    "axeRule": "button-name",
+    "page": "home",
+    "description": "Cart drawer close button with 'X' SVG, no accessible name",
+    "expectedFix": "Add aria-label='Close cart'"
+  },
+  {
+    "id": "bug-15",
+    "hhId": "social-twitter",
+    "axeRule": "link-name",
+    "page": "home",
+    "description": "Twitter/X social icon link with no text or aria-label",
+    "expectedFix": "Add aria-label='Follow us on X (Twitter)'"
+  },
+  {
+    "id": "bug-16",
+    "hhId": "social-instagram",
+    "axeRule": "link-name",
+    "page": "home",
+    "description": "Instagram social icon link with no text or aria-label",
+    "expectedFix": "Add aria-label='Follow us on Instagram'"
+  },
+  {
+    "id": "bug-17",
+    "hhId": "product-link-1",
+    "axeRule": "link-name",
+    "page": "home",
+    "description": "Product image link wrapping img with no alt, link has no accessible name",
+    "expectedFix": "Add alt text to the image or aria-label to the link"
+  },
+  {
+    "id": "bug-18",
+    "hhId": "body-copy-contrast",
+    "axeRule": "color-contrast",
+    "page": "home",
+    "description": "Light grey (#aaa) body copy on white (#fff) background — ratio ~2.3:1",
+    "expectedFix": "Darken text to at least #767676 for 4.5:1 ratio"
+  },
+  {
+    "id": "bug-19",
+    "hhId": "price-contrast",
+    "axeRule": "color-contrast",
+    "page": "home",
+    "description": "Gold price text (#c9a84c) on cream background (#f9f5ef) — ratio ~2.1:1",
+    "expectedFix": "Darken gold to at least #7a6428 for 4.5:1"
+  },
+  {
+    "id": "bug-20",
+    "hhId": "placeholder-label-contrast",
+    "axeRule": "color-contrast",
+    "page": "home",
+    "description": "Placeholder text used as label, very light grey on white",
+    "expectedFix": "Add visible label and darken placeholder"
+  },
+  {
+    "id": "bug-21",
+    "hhId": "newsletter-input",
+    "axeRule": "label",
+    "page": "home",
+    "description": "Newsletter email input has placeholder but no <label> or aria-label",
+    "expectedFix": "Add aria-label='Email address' or associate a visible label"
+  },
+  {
+    "id": "bug-22",
+    "hhId": "checkout-name-input",
+    "axeRule": "label",
+    "page": "checkout",
+    "description": "Checkout name field has placeholder 'Full name' but no label",
+    "expectedFix": "Add <label> for the input"
+  },
+  {
+    "id": "bug-23",
+    "hhId": "checkout-email-input",
+    "axeRule": "label",
+    "page": "checkout",
+    "description": "Checkout email field has placeholder 'Email' but no label",
+    "expectedFix": "Add <label> for the input"
+  },
+  {
+    "id": "bug-24",
+    "hhId": "checkout-card-input",
+    "axeRule": "label",
+    "page": "checkout",
+    "description": "Card number field has placeholder but no label",
+    "expectedFix": "Add <label> for the input"
+  },
+  {
+    "id": "bug-25",
+    "hhId": "qty-minus-target",
+    "axeRule": "target-size",
+    "page": "product",
+    "description": "Quantity buttons are 24×24px or smaller, below WCAG 2.5.8 minimum",
+    "expectedFix": "Increase to at least 24×24px with adequate spacing"
+  },
+  {
+    "id": "bug-26",
+    "hhId": "footer-links",
+    "axeRule": "target-size",
+    "page": "home",
+    "description": "Footer links cramped with insufficient spacing — effective target < 24px",
+    "expectedFix": "Add padding to increase target size"
+  },
+  {
+    "id": "bug-27",
+    "hhId": "html-no-lang",
+    "axeRule": "html-has-lang",
+    "page": "home",
+    "description": "lang attribute removed from <html> while Haunted Hollow is mounted",
+    "expectedFix": "Add lang='en' to the html element"
+  },
+  {
+    "id": "bug-28",
+    "hhId": "heading-jump",
+    "axeRule": "heading-order",
+    "page": "home",
+    "description": "Heading jumps from h1 to h4 in the featured products section",
+    "expectedFix": "Change h4 to h2 to maintain logical heading order"
+  },
+  {
+    "id": "bug-29",
+    "hhId": "content-no-landmark",
+    "axeRule": "region",
+    "page": "home",
+    "description": "Main content area is a plain div with no landmark role or <main> element",
+    "expectedFix": "Wrap content in <main> or add role='main'"
+  },
+  {
+    "id": "bug-30",
+    "hhId": "fake-button",
+    "axeRule": "button-name",
+    "page": "home",
+    "description": "div with onclick and class 'btn' has no role='button', no tabindex, no accessible name",
+    "expectedFix": "Add role='button', tabindex='0', aria-label, and keyboard handler"
+  },
+  {
+    "id": "bug-31",
+    "hhId": "shipping-select",
+    "axeRule": "label",
+    "page": "checkout",
+    "description": "Shipping method <select> has no associated label",
+    "expectedFix": "Add aria-label='Shipping method' or associate a <label>"
+  },
+  {
+    "id": "bug-32",
+    "hhId": "click-here-link",
+    "axeRule": "link-name",
+    "page": "home",
+    "description": "Footer link reads 'click here' with no context — not descriptive",
+    "expectedFix": "Change to descriptive link text like 'View our accessibility statement'"
+  },
+  {
+    "id": "bug-33",
+    "hhId": "product-detail-img",
+    "axeRule": "image-alt",
+    "page": "product",
+    "description": "Product detail hero image has no alt attribute",
+    "expectedFix": "Add descriptive alt text"
+  },
+  {
+    "id": "bug-34",
+    "hhId": "product-detail-contrast",
+    "axeRule": "color-contrast",
+    "page": "product",
+    "description": "Product description text in light grey on off-white — insufficient contrast",
+    "expectedFix": "Darken text colour"
+  },
+  {
+    "id": "bug-35",
+    "hhId": "nav-no-landmark",
+    "axeRule": "region",
+    "page": "home",
+    "description": "Navigation links in a plain div, not in a <nav> landmark",
+    "expectedFix": "Wrap in <nav aria-label='Main navigation'>"
+  },
+  {
+    "id": "bug-36",
+    "hhId": "carousel-contrast",
+    "axeRule": "color-contrast",
+    "page": "home",
+    "description": "Carousel caption text (#ccc) over semi-transparent dark overlay — borderline low contrast",
+    "expectedFix": "Use high-contrast text colour on overlay"
+  },
+  {
+    "id": "bug-37",
+    "hhId": "wishlist-btn-3",
+    "axeRule": "button-name",
+    "page": "home",
+    "description": "Third product wishlist button — no accessible name",
+    "expectedFix": "Add aria-label='Add to wishlist'"
+  }
+]

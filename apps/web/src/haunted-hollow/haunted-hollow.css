@@ -1,0 +1,434 @@
+/* Haunted Hollow store styles — INTENTIONALLY INACCESSIBLE */
+/* This is the ONLY place in the codebase where bad accessibility is deliberate. */
+
+.hh-root {
+  --hh-bg: #faf6f0;
+  --hh-surface: #f3ede3;
+  --hh-dark: #1a1209;
+  --hh-mid: #3d2e1a;
+  /* BUG: low contrast text colours */
+  --hh-body-text: #aaaaaa;       /* ~2.3:1 on #fff — bug-18 */
+  --hh-price: #c9a84c;           /* ~2.1:1 on #f9f5ef — bug-19 */
+  --hh-accent: #6b4c2a;
+  --hh-gold: #c9a84c;
+  --hh-cream: #f9f5ef;
+  font-family: 'Georgia', serif;
+  background: var(--hh-bg);
+  color: var(--hh-dark);
+  min-height: 100vh;
+}
+
+/* BUG: nav not in a <nav> element — bug-35 */
+.hh-header {
+  background: var(--hh-dark);
+  color: var(--hh-cream);
+  padding: 0;
+}
+
+.hh-header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+}
+
+.hh-wordmark {
+  font-size: 24px;
+  letter-spacing: 0.08em;
+  color: var(--hh-gold);
+  text-decoration: none;
+  font-variant: small-caps;
+}
+
+/* BUG: nav links in a div, not <nav> */
+.hh-nav-links {
+  display: flex;
+  gap: 8px;      /* BUG: cramped — bug-26 */
+  align-items: center;
+}
+
+.hh-nav-links a {
+  color: var(--hh-cream);
+  text-decoration: none;
+  font-size: 13px;
+  padding: 2px 4px;    /* BUG: tiny target size */
+}
+
+/* BUG: icon buttons have no labels */
+.hh-icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--hh-cream);
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  /* BUG: tiny hit target — no accessible name */
+}
+
+/* Hero */
+.hh-hero {
+  position: relative;
+  height: 480px;
+  overflow: hidden;
+  background: var(--hh-dark);
+}
+
+.hh-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.75;
+  /* BUG: no alt attribute on this img — bug-01 */
+}
+
+.hh-hero-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px;
+}
+
+.hh-hero h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  color: #cccccc;   /* BUG: low contrast on dark overlay — bug-36 */
+  letter-spacing: 0.06em;
+  font-variant: small-caps;
+  margin-bottom: 16px;
+}
+
+/* BUG: h1 → h4 jump — bug-28 */
+.hh-section-title {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--hh-gold);
+  /* NOTE: Using h4 for section titles while h1 is the hero */
+}
+
+/* Products grid */
+.hh-products {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 24px;
+}
+
+.hh-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 32px;
+  margin-top: 32px;
+}
+
+.hh-product-card {
+  background: var(--hh-surface);
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+}
+
+.hh-product-card:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+}
+
+/* BUG: product image links wrap an img with no alt — bug-17 */
+.hh-product-img-link {
+  display: block;
+  aspect-ratio: 1;
+  overflow: hidden;
+}
+
+.hh-product-img-link img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.hh-product-img-link:hover img {
+  transform: scale(1.03);
+}
+
+.hh-product-info {
+  padding: 16px;
+}
+
+.hh-product-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--hh-dark);
+  margin-bottom: 4px;
+}
+
+/* BUG: product description in low-contrast grey — bug-18 */
+.hh-product-desc {
+  font-size: 13px;
+  color: var(--hh-body-text);
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+/* BUG: price in low-contrast gold — bug-19 */
+.hh-product-price {
+  font-size: 16px;
+  color: var(--hh-price);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.hh-product-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px 16px;
+}
+
+/* BUG: wishlist button — icon only, no accessible name */
+.hh-wishlist-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  color: var(--hh-gold);
+}
+
+/* Newsletter */
+.hh-newsletter {
+  background: var(--hh-dark);
+  padding: 60px 24px;
+  text-align: center;
+}
+
+.hh-newsletter h2 {
+  color: var(--hh-gold);
+  font-size: 24px;
+  font-variant: small-caps;
+  margin-bottom: 8px;
+}
+
+/* BUG: newsletter text in low contrast */
+.hh-newsletter p {
+  color: #888888;    /* low contrast on dark bg — supplemental */
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+
+.hh-newsletter-form {
+  display: flex;
+  gap: 0;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* BUG: input with placeholder but no label — bug-21 */
+.hh-newsletter-input {
+  flex: 1;
+  padding: 12px 16px;
+  border: 1px solid #3d2e1a;
+  background: #2a1f10;
+  color: #cccccc;
+  font-size: 14px;
+  outline: none;
+}
+
+.hh-newsletter-btn {
+  padding: 12px 20px;
+  background: var(--hh-gold);
+  border: none;
+  color: var(--hh-dark);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Footer */
+.hh-footer {
+  background: #100c06;
+  padding: 40px 24px;
+  color: #666666;
+  font-size: 12px;
+}
+
+.hh-footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+/* BUG: footer links cramped — bug-26 */
+.hh-footer-links {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hh-footer-links a {
+  color: #888888;
+  text-decoration: none;
+  font-size: 11px;
+  padding: 2px 3px;    /* BUG: tiny target */
+}
+
+.hh-social-links {
+  display: flex;
+  gap: 8px;
+}
+
+/* BUG: social icon links have no accessible name — bug-15, bug-16 */
+.hh-social-links a {
+  color: #666666;
+  display: flex;
+  padding: 4px;
+}
+
+/* Cart drawer */
+.hh-cart-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 100;
+}
+
+.hh-cart-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: min(400px, 90vw);
+  background: var(--hh-surface);
+  z-index: 101;
+  padding: 24px;
+  overflow-y: auto;
+}
+
+.hh-cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+/* BUG: cart close button — X icon, no accessible name — bug-14 */
+.hh-cart-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--hh-dark);
+  display: flex;
+  padding: 4px;
+}
+
+/* Product detail */
+.hh-detail {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.hh-detail-img-wrap {
+  aspect-ratio: 1;
+  overflow: hidden;
+  background: var(--hh-surface);
+}
+
+/* BUG: product detail image has no alt — bug-33 */
+.hh-detail-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* BUG: product description low contrast — bug-34 */
+.hh-detail-description {
+  color: #aaaaaa;
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.hh-qty-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  width: fit-content;
+}
+
+/* BUG: tiny quantity buttons — bug-25, bug-12, bug-13 */
+.hh-qty-btn {
+  width: 28px;
+  height: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* BUG: no aria-label, below 24px minimum is debatable — real target-size issue */
+}
+
+.hh-qty-display {
+  width: 40px;
+  text-align: center;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  padding: 4px 0;
+  font-size: 14px;
+}
+
+/* BUG: fake button div — bug-30 */
+.hh-fake-cta {
+  background: var(--hh-dark);
+  color: var(--hh-gold);
+  padding: 14px 32px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  /* this is a div with onclick, not a <button> */
+}
+
+/* Checkout */
+.hh-checkout {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 60px 24px;
+}
+
+/* BUG: inputs with placeholder but no label — bug-22, bug-23, bug-24 */
+.hh-field input,
+.hh-field select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  background: #fff;
+  font-size: 15px;
+  outline: none;
+  margin-bottom: 16px;
+}
+
+/* BUG: shipping select has no label — bug-31 */
+.hh-field select {
+  color: var(--hh-dark);
+}

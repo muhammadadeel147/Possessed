@@ -19,6 +19,7 @@
     "worker:deploy": "pnpm --filter @possessed/exorcist-ai deploy"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.14.1",
     "@playwright/test": "^1.49.0",
     "@typescript-eslint/eslint-plugin": "^8.0.0",
     "@typescript-eslint/parser": "^8.0.0",
