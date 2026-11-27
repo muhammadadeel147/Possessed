@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import { HauntedHollow } from './haunted-hollow/HauntedHollow';
+import { SpiritsPlayground } from './dev/SpiritsPlayground';
 
 export default function App() {
   return (
@@ -9,8 +10,16 @@ export default function App() {
         path="/"
         element={
           <div
-            className="text-bone bg-void min-h-screen flex items-center justify-center font-display text-4xl"
-            style={{ color: '#ECE6D9', background: '#07060B' }}
+            style={{
+              color: '#ECE6D9',
+              background: '#07060B',
+              minHeight: '100vh',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              fontFamily: '"IM Fell English SC", serif',
+              fontSize: '2.5rem',
+            }}
           >
             POSSESSED — Coming Soon
           </div>
@@ -19,6 +28,9 @@ export default function App() {
 
       {/* Haunted Hollow demo store — Stage 1 */}
       <Route path="/haunted-hollow/*" element={<HauntedHollow />} />
+
+      {/* Dev playground — Stage 2 */}
+      <Route path="/dev/spirits" element={<SpiritsPlayground />} />
     </Routes>
   );
 }

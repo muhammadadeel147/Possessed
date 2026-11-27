@@ -6,7 +6,11 @@ describe('core bootstrap', () => {
     expect(typeof createPossession).toBe('function');
   });
 
-  it('throws until Stage 2 implementation', () => {
-    expect(() => createPossession(document)).toThrow('not yet implemented');
+  it('createPossession returns a Possession with spirits registered', () => {
+    const possession = createPossession(document);
+    expect(possession.spirits.get('fog')).toBeDefined();
+    expect(possession.spirits.get('drain')).toBeDefined();
+    expect(possession.spirits.get('tunnel')).toBeDefined();
+    possession.destroy();
   });
 });
